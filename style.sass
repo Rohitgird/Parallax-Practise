@@ -1,0 +1,156 @@
+
+body
+    font-family: "Open Sans", sans-serif
+
+h1
+    color: #ccc
+    font-weight: 300
+
+figure
+    margin-bottom: 20px
+    position: relative
+    opacity: 0
+    transition: all 0.4s ease-in-out
+    transform: translateX(20px)
+    overflow: hidden
+
+    &.is-showing
+        opacity: 1
+        transform: translateX(0px)
+
+    img
+        display: block
+        max-width: 100%
+        transform: scale(1)
+        transition: all 0.3s ease-in-out
+
+
+        &:hover
+            transform: scale(1.1)
+
+    &:hover
+        figcaption
+            left: 0%
+
+
+.content
+    article
+        padding: 100px 0px
+        max-width: 640px
+        margin: 0 auto
+        text-align: center
+
+
+
+
+.bird-box
+    position: relative
+    height: 600px
+    background: url('/images/bird-bg.jpg') top center no-repeat
+    background-size: contain
+    background-attachment: fixed
+    overflow: hidden
+
+.logo
+    height: 100px
+    width: 100%
+    background: url('/images/black-bird-logo.svg') center no-repeat
+    position: absolute
+    top: 50%
+    margin-top: -50px
+
+.fore-bird
+    width: 960px
+    height: 733px
+    background: url('/images/fore-bird.png') right bottom no-repeat
+    position: absolute
+    left: 50%
+    margin-left: -480px
+    top: 380px
+
+.back-bird
+    width: 960px
+    height: 298px
+    background: url('/images/back-bird.png') top left no-repeat
+    position: absolute
+    left: 50%
+    margin-left: -380px
+
+.four.col
+    margin: 8px
+
+
+.periscope
+
+    height: 600px
+    width: 50%
+    background: url('/images/model2.jpg') top center no-repeat
+    border-radius: 50%
+    background-attachment: fixed
+    margin: 0 auto
+
+figcaption
+    position: absolute
+    bottom: 0
+    left: 0
+    background-color: rgba(0,0,0,0.8)
+    color: #fff
+    font-size: 12px
+    margin-bottom: 15px
+
+
+.floating-label
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+    max-width: 960px
+    margin: 100px auto
+
+.label-container
+    padding-top: 10px
+    position: relative
+    border: 3px solid #ccc
+    margin: 10px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    background-color: #fff
+    flex-direction: column
+    justify-content: center
+    flex: 1
+
+
+    img
+        height: 135px
+        width: 175px
+        left: 50%
+        margin: 0 auto
+
+    p
+        text-align: center
+
+button
+    background-color: #fff
+    border: 2px solid black
+    outline: none
+    border-radius: 4px
+    box-sizing: border-box
+    width: 40%
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 5px
+
+#label-one
+    transform: translate(-200px, 45px)
+#label-two
+    transform: translateX(0px)
+#label-three
+    transform: translateX(200px, 45px)
